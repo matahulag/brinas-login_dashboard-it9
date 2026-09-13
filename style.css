@@ -254,3 +254,40 @@ tbody tr:hover {
     padding: 18px;
   }
 }
+/* Registration button */
+.register-button {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px;
+  background-color: #17634e;
+  color: #ffffff;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.register-button:hover {
+  background-color: #104b3b;
+}
+
+/* Links between Login and Register */
+.account-link {
+  margin-top: 24px;
+  color: #5f706a;
+  font-size: 14px;
+  text-align: center;
+}
+
+.account-link a {
+  color: #17634e;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.account-link a:hover {
+  color: #104b3b;
+}
