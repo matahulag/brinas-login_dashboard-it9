@@ -1,0 +1,256 @@
+/* General styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f3f6f5;
+  color: #243c36;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.description {
+  margin-top: 6px;
+  color: #5f706a;
+}
+
+/* Login page */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 36px;
+  background-color: #ffffff;
+  border: 1px solid #dce5e1;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(24, 67, 54, 0.08);
+}
+
+.school-logo {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 18px;
+  background-color: #17634e;
+  color: #ffffff;
+  border-radius: 14px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 56px;
+  text-align: center;
+}
+
+.school-name {
+  margin-bottom: 8px;
+  color: #17634e;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.login-card h1 {
+  font-size: 28px;
+}
+
+.login-card > h1,
+.login-card > p {
+  text-align: center;
+}
+
+form {
+  margin-top: 28px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  background-color: #fbfcfb;
+  border: 1px solid #aabdb5;
+  border-radius: 8px;
+  font: inherit;
+}
+
+button {
+  width: 100%;
+  margin-top: 6px;
+  padding: 12px;
+  background-color: #17634e;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #104b3b;
+}
+
+input:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #31836b;
+  outline-offset: 3px;
+}
+
+.footer-note {
+  margin-top: 24px;
+  color: #5f706a;
+  font-size: 12px;
+}
+
+/* Dashboard header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 6%;
+  background-color: #174b3c;
+  color: #ffffff;
+}
+
+.header-label {
+  margin-bottom: 4px;
+  color: #cee6db;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.site-header h1 {
+  font-size: 24px;
+}
+
+.logout-link {
+  padding: 8px 18px;
+  background-color: #ffffff;
+  color: #174b3c;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logout-link:hover {
+  background-color: #dceee5;
+}
+
+/* Dashboard content */
+.dashboard {
+  width: 88%;
+  max-width: 1100px;
+  margin: 32px auto;
+}
+
+.welcome-box {
+  margin-bottom: 24px;
+  padding: 24px;
+  background-color: #e1eee7;
+  border-left: 5px solid #17634e;
+  border-radius: 8px;
+}
+
+.welcome-box h2,
+.records-card h2 {
+  font-size: 22px;
+}
+
+.welcome-box p {
+  margin-top: 4px;
+}
+
+.records-card {
+  padding: 26px;
+  background-color: #ffffff;
+  border: 1px solid #dce5e1;
+  border-radius: 12px;
+}
+
+/* Student table */
+.table-wrapper {
+  margin-top: 22px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 14px 16px;
+  border: 1px solid #d7e2dc;
+  text-align: left;
+}
+
+th {
+  background-color: #17634e;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+td {
+  font-size: 14px;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f1f7f3;
+}
+
+tbody tr:hover {
+  background-color: #e3efe8;
+}
+
+.dashboard-footer {
+  margin-top: 24px;
+  color: #5f706a;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Small screens */
+@media (max-width: 600px) {
+  .site-header {
+    padding: 20px;
+  }
+
+  .site-header h1 {
+    font-size: 19px;
+  }
+
+  .dashboard {
+    width: 94%;
+    margin-top: 20px;
+  }
+
+  .records-card {
+    padding: 18px;
+  }
+}
